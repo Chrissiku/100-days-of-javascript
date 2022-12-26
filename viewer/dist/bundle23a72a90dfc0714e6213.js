@@ -2,6 +2,45 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/data.js":
+/*!*********************!*\
+  !*** ./src/data.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var data = [{
+  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+}, {
+  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+}, {
+  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+}, {
+  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+}, {
+  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+}, {
+  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
+  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (data);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.css":
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.css ***!
@@ -22,7 +61,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --primary-color: #30336b;\n  --secondary-color: #be2edd;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  text-decoration: none;\n}\n\nbody {\n  font-family: \"Roboto\", sans-serif;\n  transition: transform 0.5s ease;\n}\n\nnav {\n  background-color: var(--primary-color);\n  border-right: 2px solid rgba(200, 200, 200, 0.493);\n  color: #fff;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 300px;\n  height: 100%;\n  z-index: 100;\n  /* transform: translateX(-100%); */\n}", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,wBAAA;EACA,0BAAA;AAAF;;AAGA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,qBAAA;AAAF;;AAGA;EACE,iCAAA;EACA,+BAAA;AAAF;;AAGA;EACE,sCAAA;EACA,kDAAA;EACA,WAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,YAAA;EACA,YAAA;EACA,YAAA;EACA,kCAAA;AAAF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\r\n\r\n:root {\r\n  --primary-color: #30336b;\r\n  --secondary-color: #be2edd;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Roboto\", sans-serif;\r\n  transition: transform 0.5s ease;\r\n}\r\n\r\nnav {\r\n  background-color: var(--primary-color);\r\n  border-right: 2px solid rgba(200, 200, 200, 0.493);\r\n  color: #fff;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 300px;\r\n  height: 100%;\r\n  z-index: 100;\r\n  /* transform: translateX(-100%); */\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --primary-color: #30336b;\n  --secondary-color: #0890b986;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  text-decoration: none;\n}\n\nbody {\n  font-family: \"Roboto\", sans-serif;\n  transition: transform 0.5s ease, width 0.5s ease;\n}\n\nbody.show-nav {\n  transform: translateX(250px);\n  width: calc(100% - 250px);\n  transition: transform 0.5s ease, width 0.5s ease;\n}\n\nnav {\n  background-color: var(--primary-color);\n  border-right: 2px solid rgba(200, 200, 200, 0.493);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 250px;\n  height: 100%;\n  z-index: 100;\n  transform: translateX(-100%);\n}\n\nnav .logo {\n  padding: 30px 0;\n  text-align: center;\n}\n\n.box img {\n  width: 100%;\n  object-fit: cover;\n  height: 200px;\n}\n\nnav .logo img {\n  height: 150px;\n  width: 150px;\n  border-radius: 50px;\n  object-fit: contain;\n}\n\nnav ul {\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  list-style-type: none;\n  text-align: center;\n  margin: 0;\n}\n\nnav ul li {\n  border-bottom: 2px solid rgba(200, 200, 200, 0.1);\n  padding: 20px;\n  width: 100%;\n}\n\nnav ul li:first-of-type {\n  border-top: 2px solid rgba(200, 200, 200, 0.1);\n}\n\nnav ul li a {\n  color: #fff;\n  text-decoration: none;\n}\n\nnav ul li a:hover {\n  text-decoration: underline;\n}\n\nheader {\n  background-color: var(--primary-color);\n  color: #fff;\n  font-size: 130%;\n  position: relative;\n  padding: 40px 15px;\n  text-align: center;\n}\n\nheader h1 {\n  margin: 0;\n}\n\nheader p {\n  margin: 30px 0;\n  font-size: 16px;\n}\n\n.btn {\n  background-color: var(--secondary-color);\n  border: 0;\n  border-radius: 5px;\n  color: #fff;\n  cursor: pointer;\n  padding: 10px;\n  font-size: 15px;\n}\n\nbutton {\n  background-color: var(--secondary-color);\n  border: 0;\n  border-radius: 5px;\n  color: #fff;\n  cursor: pointer;\n  padding: 6px 8px;\n}\n\n.toggle {\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.3);\n  top: 10px;\n  left: 10px;\n}\n\n.container {\n  margin: auto;\n  padding: 20px;\n  background-color: var(--secondary-color);\n}\n\nmain {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  grid-gap: 20px;\n}\n\n.box {\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);\n  border: 4px solid var(--primary-color);\n  border-radius: 10px;\n  cursor: pointer;\n  display: flex;\n  flex-direction: column;\n  overflow: hidden;\n  transition: box-shadow 0.2s ease-out;\n}\n\n.box .info {\n  background-color: var(--secondary-color);\n  margin: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.box .info a {\n  text-align: center;\n  width: 40%;\n  color: #fff;\n  background-color: var(--primary-color);\n  padding: 10px;\n  font-size: 18px;\n  transition: all 0.5s ease-out;\n  border: 2px solid var(--primary-color);\n}\n\n.box .info a:hover {\n  background-color: rgba(255, 255, 255, 0.61);\n  color: var(--primary-color);\n}\n\n@media (max-width: 1100px) {\n  main {\n    grid-template-columns: repeat(3, 1fr);\n  }\n}\n@media (max-width: 760px) {\n  main {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 500px) {\n  main {\n    grid-template-columns: 1fr;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,wBAAA;EACA,4BAAA;AAAF;;AAGA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,qBAAA;AAAF;;AAGA;EACE,iCAAA;EACA,gDAAA;AAAF;;AAGA;EACE,4BAAA;EACA,yBAAA;EACA,gDAAA;AAAF;;AAGA;EACE,sCAAA;EACA,kDAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,YAAA;EACA,YAAA;EACA,YAAA;EACA,4BAAA;AAAF;;AAGA;EACE,eAAA;EACA,kBAAA;AAAF;;AAGA;EACE,WAAA;EACA,iBAAA;EACA,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,YAAA;EACA,mBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,UAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,kBAAA;EACA,SAAA;AAAF;;AAGA;EACE,iDAAA;EACA,aAAA;EACA,WAAA;AAAF;;AAGA;EACE,8CAAA;AAAF;;AAGA;EACE,WAAA;EACA,qBAAA;AAAF;;AAGA;EACE,0BAAA;AAAF;;AAGA;EACE,sCAAA;EACA,WAAA;EACA,eAAA;EACA,kBAAA;EACA,kBAAA;EACA,kBAAA;AAAF;;AAGA;EACE,SAAA;AAAF;;AAGA;EACE,cAAA;EACA,eAAA;AAAF;;AAGA;EACE,wCAAA;EACA,SAAA;EACA,kBAAA;EACA,WAAA;EACA,eAAA;EACA,aAAA;EACA,eAAA;AAAF;;AAGA;EACE,wCAAA;EACA,SAAA;EACA,kBAAA;EACA,WAAA;EACA,eAAA;EACA,gBAAA;AAAF;;AAGA;EACE,kBAAA;EACA,oCAAA;EACA,SAAA;EACA,UAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,wCAAA;AAAF;;AAGA;EACE,aAAA;EACA,qCAAA;EACA,cAAA;AAAF;;AAGA;EACE,yCAAA;EACA,sCAAA;EACA,mBAAA;EACA,eAAA;EACA,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,oCAAA;AAAF;;AAGA;EACE,wCAAA;EACA,SAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AAAF;;AAGA;EACE,kBAAA;EACA,UAAA;EACA,WAAA;EACA,sCAAA;EACA,aAAA;EACA,eAAA;EACA,6BAAA;EACA,sCAAA;AAAF;;AAGA;EACE,2CAAA;EACA,2BAAA;AAAF;;AAGA;EACE;IACE,qCAAA;EAAF;AACF;AAGA;EACE;IACE,qCAAA;EADF;AACF;AAIA;EACE;IACE,0BAAA;EAFF;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\r\n\r\n:root {\r\n  --primary-color: #30336b;\r\n  --secondary-color: #0890b986;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Roboto\", sans-serif;\r\n  transition: transform 0.5s ease, width 0.5s ease;\r\n}\r\n\r\nbody.show-nav {\r\n  transform: translateX(250px);\r\n  width: calc(100% - 250px);\r\n  transition: transform 0.5s ease, width 0.5s ease;\r\n}\r\n\r\nnav {\r\n  background-color: var(--primary-color);\r\n  border-right: 2px solid rgba(200, 200, 200, 0.493);\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 250px;\r\n  height: 100%;\r\n  z-index: 100;\r\n  transform: translateX(-100%);\r\n}\r\n\r\nnav .logo {\r\n  padding: 30px 0;\r\n  text-align: center;\r\n}\r\n\r\n.box img {\r\n  width: 100%;\r\n  object-fit: cover;\r\n  height: 200px;\r\n}\r\n\r\nnav .logo img {\r\n  height: 150px;\r\n  width: 150px;\r\n  border-radius: 50px;\r\n  object-fit: contain;\r\n}\r\n\r\nnav ul {\r\n  padding: 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  list-style-type: none;\r\n  text-align: center;\r\n  margin: 0;\r\n}\r\n\r\nnav ul li {\r\n  border-bottom: 2px solid rgba(200, 200, 200, 0.1);\r\n  padding: 20px;\r\n  width: 100%;\r\n}\r\n\r\nnav ul li:first-of-type {\r\n  border-top: 2px solid rgba(200, 200, 200, 0.1);\r\n}\r\n\r\nnav ul li a {\r\n  color: #fff;\r\n  text-decoration: none;\r\n}\r\n\r\nnav ul li a:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\nheader {\r\n  background-color: var(--primary-color);\r\n  color: #fff;\r\n  font-size: 130%;\r\n  position: relative;\r\n  padding: 40px 15px;\r\n  text-align: center;\r\n}\r\n\r\nheader h1 {\r\n  margin: 0;\r\n}\r\n\r\nheader p {\r\n  margin: 30px 0;\r\n  font-size: 16px;\r\n}\r\n\r\n.btn {\r\n  background-color: var(--secondary-color);\r\n  border: 0;\r\n  border-radius: 5px;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px;\r\n  font-size: 15px;\r\n}\r\n\r\nbutton {\r\n  background-color: var(--secondary-color);\r\n  border: 0;\r\n  border-radius: 5px;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 6px 8px;\r\n}\r\n\r\n.toggle {\r\n  position: absolute;\r\n  background-color: rgba(0, 0, 0, 0.3);\r\n  top: 10px;\r\n  left: 10px;\r\n}\r\n\r\n.container {\r\n  margin: auto;\r\n  padding: 20px;\r\n  background-color: var(--secondary-color);\r\n}\r\n\r\nmain {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  grid-gap: 20px;\r\n}\r\n\r\n.box {\r\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);\r\n  border: 4px solid var(--primary-color);\r\n  border-radius: 10px;\r\n  cursor: pointer;\r\n  display: flex;\r\n  flex-direction: column;\r\n  overflow: hidden;\r\n  transition: box-shadow 0.2s ease-out;\r\n}\r\n\r\n.box .info {\r\n  background-color: var(--secondary-color);\r\n  margin: 0;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.box .info a {\r\n  text-align: center;\r\n  width: 40%;\r\n  color: #fff;\r\n  background-color: var(--primary-color);\r\n  padding: 10px;\r\n  font-size: 18px;\r\n  transition: all 0.5s ease-out;\r\n  border: 2px solid var(--primary-color);\r\n}\r\n\r\n.box .info a:hover {\r\n  background-color: rgba(255, 255, 255, 0.61);\r\n  color: var(--primary-color);\r\n}\r\n\r\n@media (max-width: 1100px) {\r\n  main {\r\n    grid-template-columns: repeat(3, 1fr);\r\n  }\r\n}\r\n\r\n@media (max-width: 760px) {\r\n  main {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n}\r\n\r\n@media (max-width: 500px) {\r\n  main {\r\n    grid-template-columns: 1fr;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -607,9 +646,40 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ "./src/styles/main.css");
+/* harmony import */ var _data_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.js */ "./src/data.js");
 
+
+var openNav = document.querySelector('#toggle');
+var navbar = document.getElementById('navbar');
+var toggleIcon = document.querySelector('.fa-bars');
+var main = document.querySelector('main');
+var closeNavbar = function closeNavbar(e) {
+  if (document.body.classList.contains('show-nav') && e.target !== openNav && !openNav.contains(e.target) && e.target !== navbar && !navbar.contains(e.target)) {
+    document.body.classList.toggle('show-nav');
+    document.body.removeEventListener('click', closeNavbar);
+  } else if (!document.body.classList.contains('show-nav')) {
+    document.body.removeEventListener('click', closeNavbar);
+  }
+};
+openNav.addEventListener('click', function () {
+  document.body.classList.toggle('show-nav');
+  toggleIcon.classList.toggle('fa-times');
+  document.body.addEventListener('click', closeNavbar);
+});
+
+// Create project boxes
+var createBox = function createBox(item) {
+  var box = document.createElement('div');
+  var image = item.image,
+    link = item.link,
+    source = item.source;
+  box.classList.add('box');
+  box.innerHTML = "\n    <img src=\"".concat(image, "\" alt=\"project image\" />\n    <p class=\"info\"><a href=").concat(link, " target=\"_blank\">Source</a> <a href=").concat(source, " target=\"_blank\">Live</a></p>\n  ");
+  main.appendChild(box);
+};
+_data_js__WEBPACK_IMPORTED_MODULE_1__["default"].forEach(createBox);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle46e2cbb795ddbed4b3c0.js.map
+//# sourceMappingURL=bundle23a72a90dfc0714e6213.js.map
