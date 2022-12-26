@@ -98,6 +98,17 @@ header h1 {
 
 header p {
   margin: 30px 0;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
 }
 
 button {
