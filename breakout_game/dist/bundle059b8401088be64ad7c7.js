@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAKA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AAHF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\r\n\r\n$primary-color: #2fa8cc;\r\n$secondary-color: #f4f4f4;\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #06556d;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n  font-family: \"Roboto\", sans-serif;\n  margin: 0;\n}\n\nh1 {\n  font-size: 45px;\n  color: #f4f4f4;\n}\n\n.btn {\n  cursor: pointer;\n  border: 0;\n  padding: 10px 20px;\n  background: #000;\n  color: #f4f4f4;\n  border-radius: 5px;\n}\n.btn:hover {\n  background: #333;\n}\n.btn:active {\n  transform: scale(0.98);\n}\n.btn:focus {\n  outline: none;\n}\n\n.rules-btn {\n  position: absolute;\n  top: 30px;\n  left: 30px;\n}\n\n.rules {\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: #333;\n  color: #f4f4f4;\n  min-height: 100vh;\n  width: 300px;\n  padding: 20px;\n  line-height: 1.5;\n  transform: translateX(-300px);\n  transition: transform 1s ease-in-out;\n}\n\n.rules.show {\n  transform: translateX(0);\n}\n\ncanvas {\n  background: #f4f4f4;\n  display: block;\n  border-radius: 5px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAKA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AAHF;;AAMA;EACE,yBAVc;EAWd,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,iCAAA;EACA,SAAA;AAHF;;AAMA;EACE,eAAA;EACA,cArBgB;AAkBlB;;AAMA;EACE,eAAA;EACA,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,cA7BgB;EA8BhB,kBAAA;AAHF;AAKE;EACE,gBAAA;AAHJ;AAME;EACE,sBAAA;AAJJ;AAOE;EACE,aAAA;AALJ;;AASA;EACE,kBAAA;EACA,SAAA;EACA,UAAA;AANF;;AASA;EACE,kBAAA;EACA,MAAA;EACA,OAAA;EACA,gBAAA;EACA,cAxDgB;EAyDhB,iBAAA;EACA,YAAA;EACA,aAAA;EACA,gBAAA;EACA,6BAAA;EACA,oCAAA;AANF;;AASA;EACE,wBAAA;AANF;;AASA;EACE,mBAtEgB;EAuEhB,cAAA;EACA,kBAAA;AANF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\");\r\n\r\n$primary-color: #06556d;\r\n$secondary-color: #f4f4f4;\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: $primary-color;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  min-height: 100vh;\r\n  font-family: \"Roboto\", sans-serif;\r\n  margin: 0;\r\n}\r\n\r\nh1 {\r\n  font-size: 45px;\r\n  color: $secondary-color;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n  border: 0;\r\n  padding: 10px 20px;\r\n  background: #000;\r\n  color: $secondary-color;\r\n  border-radius: 5px;\r\n\r\n  &:hover {\r\n    background: #333;\r\n  }\r\n\r\n  &:active {\r\n    transform: scale(0.98);\r\n  }\r\n\r\n  &:focus {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n.rules-btn {\r\n  position: absolute;\r\n  top: 30px;\r\n  left: 30px;\r\n}\r\n\r\n.rules {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  background: #333;\r\n  color: $secondary-color;\r\n  min-height: 100vh;\r\n  width: 300px;\r\n  padding: 20px;\r\n  line-height: 1.5;\r\n  transform: translateX(-300px);\r\n  transition: transform 1s ease-in-out;\r\n}\r\n\r\n.rules.show {\r\n  transform: translateX(0);\r\n}\r\n\r\ncanvas {\r\n  background: $secondary-color;\r\n  display: block;\r\n  border-radius: 5px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -607,9 +607,236 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
+var showRules = document.getElementById('rules-btn');
+var closeRules = document.getElementById('close-btn');
+var rulesSideNav = document.getElementById('rules');
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var score = 0;
+var brickRowCount = 9;
+var brickColumnCount = 5;
+var delay = 500;
+showRules.addEventListener('click', function () {
+  return rulesSideNav.classList.add('show');
+});
+closeRules.addEventListener('click', function () {
+  return rulesSideNav.classList.remove('show');
+});
+
+// Create and Draw the ball
+var ball = {
+  x: canvas.width / 2,
+  y: canvas.height / 2,
+  size: 10,
+  speed: 4,
+  dx: 4,
+  dy: -4,
+  visible: true
+};
+var drawBall = function drawBall() {
+  ctx.beginPath();
+  ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
+  ctx.fillStyle = ball.visible ? '#06556d' : 'transparent';
+  ctx.fill();
+  ctx.closePath();
+};
+
+// Create and Draw the paddle
+
+var paddle = {
+  x: canvas.width / 2 - 40,
+  y: canvas.height - 20,
+  w: 80,
+  h: 10,
+  speed: 8,
+  dx: 0,
+  visible: true
+};
+var drawPaddle = function drawPaddle() {
+  ctx.beginPath();
+  ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
+  ctx.fillStyle = paddle.visible ? '#06556d' : 'transparent';
+  ctx.fill();
+  ctx.closePath();
+};
+
+// Create and draw bricks
+
+var brickInfo = {
+  w: 70,
+  h: 20,
+  padding: 10,
+  offsetX: 45,
+  offsetY: 60,
+  visible: true
+};
+var bricks = [];
+for (var i = 0; i < brickRowCount; i += 1) {
+  bricks[i] = [];
+  for (var j = 0; j < brickColumnCount; j += 1) {
+    var x = i * (brickInfo.w + brickInfo.padding) + brickInfo.offsetX;
+    var y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetY;
+    bricks[i][j] = _objectSpread({
+      x: x,
+      y: y
+    }, brickInfo);
+  }
+}
+var drawBricks = function drawBricks() {
+  bricks.forEach(function (column) {
+    column.forEach(function (brick) {
+      ctx.beginPath();
+      ctx.rect(brick.x, brick.y, brick.w, brick.h);
+      ctx.fillStyle = brick.visible ? '#06556d' : 'transparent';
+      ctx.fill();
+      ctx.closePath();
+    });
+  });
+};
+
+// Display score on canvas
+var drawScore = function drawScore() {
+  ctx.font = '20px Roboto';
+  ctx.fillText("Score: ".concat(score), canvas.width - 100, 30);
+};
+
+// Move paddle on canvas
+var movePaddle = function movePaddle() {
+  paddle.x += paddle.dx;
+
+  // Wall detection
+  if (paddle.x + paddle.w > canvas.width) {
+    paddle.x = canvas.width - paddle.w;
+  }
+  if (paddle.x < 0) {
+    paddle.x = 0;
+  }
+};
+
+// Update canvas drawing and animation
+
+// Draw on the canvas
+var draw = function draw() {
+  // clear canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawBall();
+  drawPaddle();
+  drawScore();
+  drawBricks();
+};
+
+// Make all bricks appear
+var showAllBricks = function showAllBricks() {
+  bricks.forEach(function (column) {
+    column.forEach(function (brick) {
+      brick.visible = true;
+      return brick.visible;
+    });
+  });
+};
+
+// Increase score
+var increaseScore = function increaseScore() {
+  score += 1;
+  if (score % (brickRowCount * brickColumnCount) === 0) {
+    ball.visible = false;
+    paddle.visible = false;
+
+    // After 0.5 sec restart the game
+    setTimeout(function () {
+      showAllBricks();
+      score = 0;
+      paddle.x = canvas.width / 2 - 40;
+      paddle.y = canvas.height - 20;
+      ball.x = canvas.width / 2;
+      ball.y = canvas.height / 2;
+      ball.visible = true;
+      paddle.visible = true;
+    }, delay);
+  }
+};
+
+// Move ball on canvas
+var moveBall = function moveBall() {
+  ball.x += ball.dx;
+  ball.y += ball.dy;
+
+  // Wall collision (right/left)
+  if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
+    ball.dx *= -1; // ball.dx = ball.dx * -1
+  }
+
+  // Wall collision (top/bottom)
+  if (ball.y + ball.size > canvas.height || ball.y - ball.size < 0) {
+    ball.dy *= -1;
+  }
+
+  // console.log(ball.x, ball.y);
+
+  // Paddle collision
+  if (ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w && ball.y + ball.size > paddle.y) {
+    ball.dy = -ball.speed;
+  }
+
+  // Brick collision
+  bricks.forEach(function (column) {
+    column.forEach(function (brick) {
+      if (brick.visible) {
+        if (ball.x - ball.size > brick.x // left brick side check
+        && ball.x + ball.size < brick.x + brick.w // right brick side check
+        && ball.y + ball.size > brick.y // top brick side check
+        && ball.y - ball.size < brick.y + brick.h // bottom brick side check
+        ) {
+          ball.dy *= -1;
+          brick.visible = false;
+          increaseScore();
+        }
+      }
+    });
+  });
+
+  // Hit bottom wall - Lose
+  if (ball.y + ball.size > canvas.height) {
+    showAllBricks();
+    score = 0;
+  }
+};
+var update = function update() {
+  movePaddle();
+  moveBall();
+  draw();
+  requestAnimationFrame(update);
+};
+update();
+
+// Keydown event
+var keyDown = function keyDown(e) {
+  if (e.key === 'Right' || e.key === 'ArrowRight') {
+    paddle.dx = paddle.speed;
+  } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
+    paddle.dx = -paddle.speed;
+  }
+};
+
+// Keyup event
+var keyUp = function keyUp(e) {
+  if (e.key === 'Right' || e.key === 'ArrowRight' || e.key === 'Left' || e.key === 'ArrowLeft') {
+    paddle.dx = 0;
+  }
+};
+
+// Keyboard event handlers
+document.addEventListener('keydown', keyDown);
+document.addEventListener('keyup', keyUp);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle4d22f3c1517f1b7aaa44.js.map
+//# sourceMappingURL=bundle059b8401088be64ad7c7.js.map
