@@ -90,8 +90,23 @@ const drawScore = () => {
   ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
 };
 
+// Move paddle on canvas
+const movePaddle = () => {
+  paddle.x += paddle.dx;
+
+  // Wall detection
+  if (paddle.x + paddle.w > canvas.width) {
+    paddle.x = canvas.width - paddle.w;
+  }
+
+  if (paddle.x < 0) {
+    paddle.x = 0;
+  }
+};
+
 // Update canvas drawing and animation
 function update() {
+  movePaddle();
   requestAnimationFrame(update);
 }
 
