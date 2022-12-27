@@ -1,19 +1,17 @@
-import "./styles/main.scss";
+import './styles/main.scss';
 
-const showRules = document.getElementById("rules-btn");
-const closeRules = document.getElementById("close-btn");
-const rulesSideNav = document.getElementById("rules");
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+const showRules = document.getElementById('rules-btn');
+const closeRules = document.getElementById('close-btn');
+const rulesSideNav = document.getElementById('rules');
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
 let score = 0;
 const brickRowCount = 9;
 const brickColumnCount = 5;
 const delay = 500;
 
-showRules.addEventListener("click", () => rulesSideNav.classList.add("show"));
-closeRules.addEventListener("click", () =>
-  rulesSideNav.classList.remove("show")
-);
+showRules.addEventListener('click', () => rulesSideNav.classList.add('show'));
+closeRules.addEventListener('click', () => rulesSideNav.classList.remove('show'));
 
 // Create and Draw the ball
 const ball = {
@@ -29,7 +27,7 @@ const ball = {
 const drawBall = () => {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-  ctx.fillStyle = ball.visible ? "#06556d" : "transparent";
+  ctx.fillStyle = ball.visible ? '#06556d' : 'transparent';
   ctx.fill();
   ctx.closePath();
 };
@@ -49,7 +47,7 @@ const paddle = {
 const drawPaddle = () => {
   ctx.beginPath();
   ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-  ctx.fillStyle = paddle.visible ? "#06556d" : "transparent";
+  ctx.fillStyle = paddle.visible ? '#06556d' : 'transparent';
   ctx.fill();
   ctx.closePath();
 };
@@ -66,9 +64,9 @@ const brickInfo = {
 };
 
 const bricks = [];
-for (let i = 0; i < brickRowCount; i++) {
+for (let i = 0; i < brickRowCount; i += 1) {
   bricks[i] = [];
-  for (let j = 0; j < brickColumnCount; j++) {
+  for (let j = 0; j < brickColumnCount; j += 1) {
     const x = i * (brickInfo.w + brickInfo.padding) + brickInfo.offsetX;
     const y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetY;
     bricks[i][j] = { x, y, ...brickInfo };
@@ -80,7 +78,7 @@ const drawBricks = () => {
     column.forEach((brick) => {
       ctx.beginPath();
       ctx.rect(brick.x, brick.y, brick.w, brick.h);
-      ctx.fillStyle = brick.visible ? "#06556d" : "transparent";
+      ctx.fillStyle = brick.visible ? '#06556d' : 'transparent';
       ctx.fill();
       ctx.closePath();
     });
@@ -89,7 +87,7 @@ const drawBricks = () => {
 
 // Display score on canvas
 const drawScore = () => {
-  ctx.font = "20px Roboto";
+  ctx.font = '20px Roboto';
   ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
 };
 
@@ -120,16 +118,26 @@ const draw = () => {
   drawBricks();
 };
 
+// Make all bricks appear
+const showAllBricks = () => {
+  bricks.forEach((column) => {
+    column.forEach((brick) => {
+      brick.visible = true;
+      return brick.visible;
+    });
+  });
+};
+
 // Increase score
 const increaseScore = () => {
-  score++;
+  score += 1;
 
   if (score % (brickRowCount * brickColumnCount) === 0) {
     ball.visible = false;
     paddle.visible = false;
 
-    //After 0.5 sec restart the game
-    setTimeout(function () {
+    // After 0.5 sec restart the game
+    setTimeout(() => {
       showAllBricks();
       score = 0;
       paddle.x = canvas.width / 2 - 40;
@@ -140,13 +148,6 @@ const increaseScore = () => {
       paddle.visible = true;
     }, delay);
   }
-};
-
-// Make all bricks appear
-const showAllBricks = () => {
-  bricks.forEach((column) => {
-    column.forEach((brick) => (brick.visible = true));
-  });
 };
 
 // Move ball on canvas
@@ -168,9 +169,9 @@ const moveBall = () => {
 
   // Paddle collision
   if (
-    ball.x - ball.size > paddle.x &&
-    ball.x + ball.size < paddle.x + paddle.w &&
-    ball.y + ball.size > paddle.y
+    ball.x - ball.size > paddle.x
+    && ball.x + ball.size < paddle.x + paddle.w
+    && ball.y + ball.size > paddle.y
   ) {
     ball.dy = -ball.speed;
   }
@@ -180,10 +181,10 @@ const moveBall = () => {
     column.forEach((brick) => {
       if (brick.visible) {
         if (
-          ball.x - ball.size > brick.x && // left brick side check
-          ball.x + ball.size < brick.x + brick.w && // right brick side check
-          ball.y + ball.size > brick.y && // top brick side check
-          ball.y - ball.size < brick.y + brick.h // bottom brick side check
+          ball.x - ball.size > brick.x // left brick side check
+          && ball.x + ball.size < brick.x + brick.w // right brick side check
+          && ball.y + ball.size > brick.y // top brick side check
+          && ball.y - ball.size < brick.y + brick.h // bottom brick side check
         ) {
           ball.dy *= -1;
           brick.visible = false;
@@ -212,9 +213,9 @@ update();
 
 // Keydown event
 const keyDown = (e) => {
-  if (e.key === "Right" || e.key === "ArrowRight") {
+  if (e.key === 'Right' || e.key === 'ArrowRight') {
     paddle.dx = paddle.speed;
-  } else if (e.key === "Left" || e.key === "ArrowLeft") {
+  } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
     paddle.dx = -paddle.speed;
   }
 };
@@ -222,15 +223,15 @@ const keyDown = (e) => {
 // Keyup event
 const keyUp = (e) => {
   if (
-    e.key === "Right" ||
-    e.key === "ArrowRight" ||
-    e.key === "Left" ||
-    e.key === "ArrowLeft"
+    e.key === 'Right'
+    || e.key === 'ArrowRight'
+    || e.key === 'Left'
+    || e.key === 'ArrowLeft'
   ) {
     paddle.dx = 0;
   }
 };
 
 // Keyboard event handlers
-document.addEventListener("keydown", keyDown);
-document.addEventListener("keyup", keyUp);
+document.addEventListener('keydown', keyDown);
+document.addEventListener('keyup', keyUp);
