@@ -84,8 +84,15 @@ const drawBricks = () => {
   });
 };
 
-// Draw score on canvas
+// Display score on canvas
 const drawScore = () => {
   ctx.font = "20px Roboto";
   ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
 };
+
+// Update canvas drawing and animation
+function update() {
+  requestAnimationFrame(update);
+}
+
+update();
