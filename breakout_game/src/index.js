@@ -11,7 +11,6 @@ closeRules.addEventListener("click", () =>
   rulesSideNav.classList.remove("show")
 );
 
-
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
@@ -19,5 +18,15 @@ const ball = {
   speed: 4,
   dx: 4,
   dy: -4,
+  visible: true,
+};
+
+const paddle = {
+  x: canvas.width / 2 - 40,
+  y: canvas.height - 20,
+  w: 80,
+  h: 10,
+  speed: 8,
+  dx: 0,
   visible: true,
 };
