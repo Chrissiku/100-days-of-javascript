@@ -69,3 +69,9 @@ h1 {
 .rules.show {
   transform: translateX(0);
 }
+
+canvas {
+  background: $secondary-color;
+  display: block;
+  border-radius: 5px;
+}
