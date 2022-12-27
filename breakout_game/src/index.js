@@ -5,6 +5,7 @@ const closeRules = document.getElementById("close-btn");
 const rulesSideNav = document.getElementById("rules");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+let score = 0;
 
 showRules.addEventListener("click", () => rulesSideNav.classList.add("show"));
 closeRules.addEventListener("click", () =>
@@ -81,4 +82,10 @@ const drawBricks = () => {
       ctx.closePath();
     });
   });
+};
+
+// Draw score on canvas
+const drawScore = () => {
+  ctx.font = "20px Roboto";
+  ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
 };
