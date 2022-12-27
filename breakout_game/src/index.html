@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <h1><%= htmlWebpackPlugin.options.title %></h1>
+    <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+      <h2>Rules and How To Play:</h2>
+      <p>
+        Use your right and left keys to move the paddle in order to bounce the ball up
+        and break the blocks.
+      </p>
+      <p>If you miss the ball only once, your score and the blocks will reset to 0.</p>
+      <button id="close-btn" class="btn">Close</button>
+
+    </div>
+    <!-- Game Canvas -->
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </body>
+</html>
