@@ -11,6 +11,7 @@ closeRules.addEventListener("click", () =>
   rulesSideNav.classList.remove("show")
 );
 
+// Create and Draw the ball
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
@@ -21,6 +22,16 @@ const ball = {
   visible: true,
 };
 
+const drawBall = () => {
+  ctx.beginPath();
+  ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
+  ctx.fillStyle = ball.visible ? "#0095dd" : "transparent";
+  ctx.fill();
+  ctx.closePath();
+};
+
+// Create and Draw the paddle
+
 const paddle = {
   x: canvas.width / 2 - 40,
   y: canvas.height - 20,
@@ -30,6 +41,16 @@ const paddle = {
   dx: 0,
   visible: true,
 };
+
+const drawPaddle = () => {
+  ctx.beginPath();
+  ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
+  ctx.fillStyle = paddle.visible ? "#0095dd" : "transparent";
+  ctx.fill();
+  ctx.closePath();
+};
+
+// Create and drwa bricks
 
 const brickInfo = {
   w: 70,
@@ -49,3 +70,15 @@ for (let i = 0; i < brickRowCount; i++) {
     bricks[i][j] = { x, y, ...brickInfo };
   }
 }
+
+const drawBricks = () => {
+  bricks.forEach((column) => {
+    column.forEach((brick) => {
+      ctx.beginPath();
+      ctx.rect(brick.x, brick.y, brick.w, brick.h);
+      ctx.fillStyle = brick.visible ? "#0095dd" : "transparent";
+      ctx.fill();
+      ctx.closePath();
+    });
+  });
+};
