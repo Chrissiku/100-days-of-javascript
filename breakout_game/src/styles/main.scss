@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-$primary-color: #2fa8cc;
+$primary-color: #06556d;
 $secondary-color: #f4f4f4;
 
 * {
@@ -59,10 +59,10 @@ h1 {
   background: #333;
   color: $secondary-color;
   min-height: 100vh;
-  width: 400px;
+  width: 300px;
   padding: 20px;
   line-height: 1.5;
-  transform: translateX(-400px);
+  transform: translateX(-300px);
   transition: transform 1s ease-in-out;
 }
 
