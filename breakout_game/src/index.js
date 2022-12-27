@@ -105,9 +105,34 @@ const movePaddle = () => {
 };
 
 // Update canvas drawing and animation
-function update() {
+const update = () => {
   movePaddle();
   requestAnimationFrame(update);
-}
+};
 
 update();
+
+// Keydown event
+const keyDown = (e) => {
+  if (e.key === "Right" || e.key === "ArrowRight") {
+    paddle.dx = paddle.speed;
+  } else if (e.key === "Left" || e.key === "ArrowLeft") {
+    paddle.dx = -paddle.speed;
+  }
+};
+
+// Keyup event
+const keyUp = (e) => {
+  if (
+    e.key === "Right" ||
+    e.key === "ArrowRight" ||
+    e.key === "Left" ||
+    e.key === "ArrowLeft"
+  ) {
+    paddle.dx = 0;
+  }
+};
+
+// Keyboard event handlers
+document.addEventListener("keydown", keyDown);
+document.addEventListener("keyup", keyUp);
