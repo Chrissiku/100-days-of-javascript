@@ -1,4 +1,4 @@
-# Project Starter: Webpack@5
+# Content placeholder: Webpack@5
 
 Frontend environment for building JavaScript applications
 
