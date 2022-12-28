@@ -81,13 +81,14 @@ img {
 }
 
 .animated-bg {
-  background-image: linear-gradient(
-    to right,
-    #f8eeee 0%,
-    #f0e0e0 10%,
-    #f7eaea 20%,
-    #f5e5e5 100%
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      #f8eeee 0%,
+      #f0e0e0 10%,
+      #f7eaea 20%,
+      #f5e5e5 100%
+    );
   background-size: 200% 100%;
   animation: bgPos 1s linear infinite;
 }
