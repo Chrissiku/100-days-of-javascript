@@ -6,6 +6,10 @@ const excerpt = document.getElementById("excerpt");
 const profile_image = document.getElementById("profile_img");
 const name = document.getElementById("name");
 const date = document.getElementById("date");
+const animated_background = document.querySelectorAll(".animated-bg");
+const animated_background_texts = document.querySelectorAll(
+  ".animated-bg-text"
+);
 
 const getData = () => {
   header.innerHTML =
@@ -16,7 +20,11 @@ const getData = () => {
   profile_img.innerHTML =
     '<img src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png" alt="avatar" />';
   name.innerHTML = "John Doe";
-  date.innerHTML = "Oct 08, 2020";
+  date.innerHTML = "December 28, 2022";
+  animated_background.forEach((bg) => bg.classList.remove("animated-bg"));
+  animated_background_textss.forEach((bg) =>
+    bg.classList.remove("animated-bg-text")
+  );
 };
 
 setTimeout(getData, 2500);
