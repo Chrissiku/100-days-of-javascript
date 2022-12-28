@@ -34,7 +34,7 @@ const createBox = (item) => {
   box.classList.add('box');
   box.innerHTML = `
     <img src="${image}" alt="project image" />
-    <p class="info"><a href=${link} target="_blank">Source</a> <a href=${source} target="_blank">Live</a></p>
+    <p class="info"><a href=${source} target="_blank">Source</a> <a href=${link} target="_blank">Live</a></p>
   `;
   main.appendChild(box);
 };

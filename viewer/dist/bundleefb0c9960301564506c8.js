@@ -13,29 +13,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var data = [{
-  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+  image: 'https://user-images.githubusercontent.com/101924220/209782424-ece38af8-be8c-4044-b961-0460e6f02d1b.png',
+  link: 'https://chrissiku.github.io/100-days-of-javascript/content-placeholder/dist/',
+  source: 'https://github.com/Chrissiku/100-days-of-javascript/tree/main/content-placeholder'
 }, {
-  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
-}, {
-  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
-}, {
-  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
-}, {
-  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
-}, {
-  image: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  link: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg',
-  source: 'https://chris-siku.netlify.app/static/media/avatar.2efdeefb9733415b6ede.jpg'
+  image: 'https://user-images.githubusercontent.com/101924220/209657840-44b0c28a-ddba-41d2-ace1-ac6b9be60c06.png',
+  link: 'https://chrissiku.github.io/100-days-of-javascript/breakout_game/dist/',
+  source: 'https://github.com/Chrissiku/100-days-of-javascript/tree/main/breakout_game'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (data);
 
@@ -674,7 +658,7 @@ var createBox = function createBox(item) {
     link = item.link,
     source = item.source;
   box.classList.add('box');
-  box.innerHTML = "\n    <img src=\"".concat(image, "\" alt=\"project image\" />\n    <p class=\"info\"><a href=").concat(link, " target=\"_blank\">Source</a> <a href=").concat(source, " target=\"_blank\">Live</a></p>\n  ");
+  box.innerHTML = "\n    <img src=\"".concat(image, "\" alt=\"project image\" />\n    <p class=\"info\"><a href=").concat(source, " target=\"_blank\">Source</a> <a href=").concat(link, " target=\"_blank\">Live</a></p>\n  ");
   main.appendChild(box);
 };
 _data_js__WEBPACK_IMPORTED_MODULE_1__["default"].forEach(createBox);
@@ -682,4 +666,4 @@ _data_js__WEBPACK_IMPORTED_MODULE_1__["default"].forEach(createBox);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle23a72a90dfc0714e6213.js.map
+//# sourceMappingURL=bundleefb0c9960301564506c8.js.map
